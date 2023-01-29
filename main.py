@@ -8,4 +8,4 @@ if __name__ == "__main__":
     
     r = request.urlretrieve(f"https://geneni.info/yugidexdb/{db_name}", db_name)
     db = YuGiDexDB(db_name)
-    print(db.search('name', 'Pot of Greed'))
+    print(db.search('name', 'Blue-Eyes'))
