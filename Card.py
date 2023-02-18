@@ -1,4 +1,4 @@
-from lang.EN_Types import CardType, Attribute, Type 
+from lang.LANGUAGES.EN_Types import CardType, Attribute, Type 
 
 class Card:
     def __init__(self, cardObj:dict, localAttribute: enumerate, Type: enumerate):

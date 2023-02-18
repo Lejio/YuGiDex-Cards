@@ -1,23 +1,23 @@
 from enum import Enum
 
-class KO_CardType(Enum):
+class ES_CardType(Enum):
     MONSTER = "MONSTER"
     SPELL = "SPELL"
     TRAP = "TRAP"
 
-class KO_Spell(Enum):
+class ES_Spell(Enum):
     EQUIP = "Equip"
     QUICKPLAY = "Quick-Play"
     NORMAL = "Normal"
     FIELD = "Field"
     RITUAL = "Ritual"
 
-class KO_Trap(Enum):
+class ES_Trap(Enum):
     NORMAL = "Normal"
     CONTINUOUS = "Continuous"
     COUNTER = "Counter"
 
-class KO_Attribute(Enum):
+class ES_Attribute(Enum):
     DARK = "Dark"
     DIVINE = "Divine"
     EARTH = "Earth"
@@ -29,7 +29,7 @@ class KO_Attribute(Enum):
     TRAP = "Trap"
     LAUGH = "Laugh"
 
-class KO_Type(Enum):
+class ES_Type(Enum):
     AQUA = "Aqua"
     BEAST = "Beast"
     BEASTWARRIOR = "Beast-Warrior" 
@@ -65,3 +65,20 @@ class KO_Type(Enum):
     PENDULUM = "Pendulum"
     LINK = "Link"
     TOKEN = "Token"
+    
+class ES_Search(Enum):
+    ID = 'id'
+    TYPE = 'type'
+    NAME = 'name'
+    EN_ATTR = 'englishAttribute'
+    L_ATTR = 'localAttribute'
+    EFFECT = 'effectText'
+    PEND_EFFECT = 'pendEffect'
+    PEND_SCALE = 'pendScale'
+    LEVEL = 'level'
+    RANK = 'rank'
+    LINKRATING = 'linkRating'
+    LINKARROW = 'linkArrows'
+    ATK = 'atk'
+    DEF = 'def'
+    PROP = 'atk'

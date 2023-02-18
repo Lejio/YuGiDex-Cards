@@ -1,23 +1,23 @@
 from enum import Enum
 
-class EN_CardType(Enum):
+class DE_CardType(Enum):
     MONSTER = "MONSTER"
     SPELL = "SPELL"
     TRAP = "TRAP"
 
-class EN_Spell(Enum):
+class DE_Spell(Enum):
     EQUIP = "Equip"
     QUICKPLAY = "Quick-Play"
     NORMAL = "Normal"
     FIELD = "Field"
     RITUAL = "Ritual"
 
-class EN_Trap(Enum):
+class DE_Trap(Enum):
     NORMAL = "Normal"
     CONTINUOUS = "Continuous"
     COUNTER = "Counter"
 
-class EN_Attribute(Enum):
+class DE_Attribute(Enum):
     DARK = "Dark"
     DIVINE = "Divine"
     EARTH = "Earth"
@@ -29,7 +29,7 @@ class EN_Attribute(Enum):
     TRAP = "Trap"
     LAUGH = "Laugh"
 
-class EN_Type(Enum):
+class DE_Type(Enum):
     AQUA = "Aqua"
     BEAST = "Beast"
     BEASTWARRIOR = "Beast-Warrior" 
@@ -65,3 +65,20 @@ class EN_Type(Enum):
     PENDULUM = "Pendulum"
     LINK = "Link"
     TOKEN = "Token"
+    
+class DE_Search(Enum):
+    ID = 'id'
+    TYPE = 'type'
+    NAME = 'name'
+    EN_ATTR = 'englishAttribute'
+    L_ATTR = 'localAttribute'
+    EFFECT = 'effectText'
+    PEND_EFFECT = 'pendEffect'
+    PEND_SCALE = 'pendScale'
+    LEVEL = 'level'
+    RANK = 'rank'
+    LINKRATING = 'linkRating'
+    LINKARROW = 'linkArrows'
+    ATK = 'atk'
+    DEF = 'def'
+    PROP = 'atk'
