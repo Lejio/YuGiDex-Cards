@@ -1,23 +1,23 @@
 from enum import Enum
 
-class CardType(Enum):
+class FR_CardType(Enum):
     MONSTER = "MONSTER"
     SPELL = "SPELL"
     TRAP = "TRAP"
 
-class Spell(Enum):
+class FR_Spell(Enum):
     EQUIP = "Equip"
     QUICKPLAY = "Quick-Play"
     NORMAL = "Normal"
     FIELD = "Field"
     RITUAL = "Ritual"
 
-class Trap(Enum):
+class FR_Trap(Enum):
     NORMAL = "Normal"
     CONTINUOUS = "Continuous"
     COUNTER = "Counter"
 
-class Attribute(Enum):
+class FR_Attribute(Enum):
     DARK = "Dark"
     DIVINE = "Divine"
     EARTH = "Earth"
@@ -29,7 +29,7 @@ class Attribute(Enum):
     TRAP = "Trap"
     LAUGH = "Laugh"
 
-class Type(Enum):
+class FR_Type(Enum):
     AQUA = "Aqua"
     BEAST = "Beast"
     BEASTWARRIOR = "Beast-Warrior" 

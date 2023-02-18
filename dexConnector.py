@@ -9,10 +9,10 @@ class YuGiDexDB:
         self._cur = self._con.cursor()
         self.currCard = {}
 
-    def search(self, col:str, word: str):
+    def search(self, param:str, word: str):
 
         self._cur
-        self.r = self._cur.execute(f"SELECT * FROM card WHERE {col} LIKE '%{word}%'").fetchall()
+        self.r = self._cur.execute(f"SELECT * FROM card WHERE {param} LIKE '%{word}%'").fetchall()
         names = []
 
         for i in range(len(self.r)):

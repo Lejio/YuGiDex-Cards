@@ -1,4 +1,4 @@
-from Types import CardType, Attribute, Type 
+from lang.EN_Types import CardType, Attribute, Type 
 
 class Card:
     def __init__(self, cardObj:dict, localAttribute: enumerate, Type: enumerate):
@@ -27,12 +27,7 @@ class Card:
 
             for prop in range(len(self.Card['properties'])):
                 self.Card['properties'][prop] = self.__fType(self.Card['properties'][prop])
-
-                # if self.Type.PENDULUM in self.Card['properties'][prop]:
-
-
-
-
+                
 
     def __nullParser(self, cardObjCat):
         
